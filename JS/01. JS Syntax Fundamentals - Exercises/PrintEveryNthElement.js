@@ -5,9 +5,9 @@ function solve(arr,num) {
         if(index <= arr.length){
             arr2[index2] = arr[index];
         }
-        console.log(arr2[index2]);
         index2++;
     }
+    return arr2;
 }
 solve(['5', 
 '20', 
