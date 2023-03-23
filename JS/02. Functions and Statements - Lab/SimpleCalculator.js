@@ -17,8 +17,9 @@ function solve (numOne,numTwo,operator) {
             result = numOne - numTwo;
         break;  
     }
+    console.log(result);
 }
 
-solve(5,
-    5,
-    'multiply');
+solve(12,
+    19,
+    'add');
