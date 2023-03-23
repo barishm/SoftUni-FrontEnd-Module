@@ -6,6 +6,7 @@ function solve(string) {
 }
 
 function wordSplitter(string) {
+
     let result = string[0];
     let lower = string.toLowerCase();
 
@@ -18,6 +19,7 @@ function wordSplitter(string) {
     }
 
     console.log(result);
+    
 }
 solve('SplitMeIfYouCanHaHaYouCantOrYouCan');
 wordSplitter('SplitMeIfYouCanHaHaYouCantOrYouCan');
