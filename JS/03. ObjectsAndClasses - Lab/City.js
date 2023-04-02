@@ -3,9 +3,7 @@ function cityInfo(city) {
     for(let [key,value] of entries) {
         console.log(`${key} -> ${value}`);
     }
-    for (const [key, value] of entries) {
-        console.log(`${key} -> ${value}`);
-    }
+    
 }
 
 cityInfo({
