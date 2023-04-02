@@ -11,7 +11,7 @@ function cityTaxes(name,population,treasury) {
             this.population = Math.ceil(this.population + this.population * (percentage / 100));
         },
         applyRecession(percentage) {
-            this.treasury = Math.ceil(this.treasury - this.treasury * percentage);
+            this.treasury = Math.ceil(this.treasury - this.treasury * (percentage / 100));
         }
     }
     return city;
