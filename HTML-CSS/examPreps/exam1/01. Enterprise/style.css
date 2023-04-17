@@ -1,0 +1,72 @@
+/* svetlo sivo - #8c959c */
+/* buton - #786eff */
+/* title - #38424f */
+/* bg - #f6f8f9 */
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+.enterprice {
+    background-color: #f6f8f9;
+    width: 80%;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 9px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.enterprice .content {
+    width: 50%;
+    margin: auto;
+    margin-left: 70px;
+}
+
+.enterprice .img {
+    width: 35%;
+    padding-right: 80px;
+}
+
+.subtitle {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #38424f;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: normal;
+    color: #38424f;
+}
+.desc {
+    font-size: 21px;
+    margin-bottom: 40px;
+    padding-right: 20%;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #8c959c;
+}
+
+.btn-primary {
+    all: unset;
+    padding: 12px 17px;
+    background-color: #786eff;
+    border-radius: 5px;
+    margin-right: 8px;
+    color: white;
+}
+
+.btn-secondary {
+    all: unset;
+    padding: 12px 17px;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color: #38424f;
+    color: #38424f;
+    font-weight: bold;
+}

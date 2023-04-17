@@ -1,0 +1,363 @@
+/* color blue - #85dcff */
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    font-size: 26px;
+    font-weight: bold;
+}
+header h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 90px;
+}
+
+
+header ul {
+    display: flex;
+    margin-right: 90px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    height: 550px;
+    background-color: #85dcff;
+}
+
+.first .info {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 120px;
+    margin-right: auto;
+}
+
+.first .info h2 {
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: bold;
+}
+.first .info p {
+    margin-bottom: 30px;
+    padding-right: 600px;
+}
+
+.info .donate {
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 7px;
+    width: 250px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.info .join {
+    width: 330px;
+    height: 60px;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+}
+
+.first .img {
+    margin-right: 90px;
+}
+
+.second {
+    height: 600px;
+    background-color: white;
+}
+
+.second .info {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.second .info h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.second .info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding-left: 700px;
+    padding-right: 700px;
+}
+
+.second .divs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.second .divs .div1 {
+    text-align: center;
+    padding: 40px;
+}
+
+.second .divs .div2 {
+    text-align: center;
+    padding: 40px;
+}
+
+.second .divs .div3 {
+    text-align: center;
+    padding: 40px;
+}
+
+.divs p {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.divs i {
+    margin-bottom: 30px;
+}
+
+.divs h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.second i {
+    font-size: 130px;
+    color: #85dcff;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-color: #85dcff;
+}
+
+.third h2 {
+    margin-top: 60px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.third .list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+
+.third .list .l li {
+    margin-bottom: 50px;
+    padding-left: 100px;
+    font-size: 20px;
+}
+
+.third .list .r li {
+    margin-bottom: 50px;
+    padding-right: 220px;
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+.mission {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.animals {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    background-color: white;
+}
+
+.animals h2 {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.animals p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.animals .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.animals .images img {
+    width: 20%;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+}
+
+.work h2 {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.work .div {
+    margin-top: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: grey solid 1px;
+}
+
+.work .div .divT {
+    display: flex;
+    height: 70px;
+    background-color: #85dcff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.work .div .divP {
+    display: flex;
+    padding: 20px;
+    padding-left: 15px;
+  
+}
+
+.divT h3 {
+    font-size: 20px;
+    margin: auto;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.divP p {
+    margin: auto;
+    margin-right: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.last {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.last img {
+    width: 50%;
+}
+
+.last .info {
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 70px;
+}
+
+.last .info h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.last .info p {
+    margin-bottom: 30px;
+    padding-right: 300px;
+}
+
+.last .info input {
+    margin-bottom: 30px;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.send {
+    background-color: black;
+    color: white;
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+input::placeholder {
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: white;
+}
+
+footer .links {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 100px;
+}
+
+footer .links i {
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+footer p {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 100px;
+    font-weight: bold;
+    font-size: 18px;
+}

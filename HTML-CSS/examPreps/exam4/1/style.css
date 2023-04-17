@@ -1,0 +1,101 @@
+body {
+    font-family: Inter;
+    line-height: 1;
+}
+
+section {
+    display: flex;
+    height: 1000px;
+    width: 1920;
+    overflow: hidden;
+}
+
+section .bg {
+    height: 2540px;
+}
+
+.divSide1 {
+    height: 600px;
+    width: 450px;
+    position: absolute;
+    background-color: white;
+    left: 200px;
+    top: 210px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    padding-top: 50px;
+    padding-left: 40px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.price {
+    padding-top: 50px;
+    padding-left: 40px;
+    font-size: 26px;
+}
+
+.big {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.billed {
+    padding-left: 40px;
+    padding-top: 35px;
+    font-size: 16px;
+    color: #979798;
+}
+
+ul {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+li {
+    padding-top: 20px;
+}
+
+li i {
+    margin-right: 5px;
+}
+
+button {
+    border: none;
+    margin-bottom: 35px;
+    margin-top: auto;
+    margin-left: 40px;
+    width: 150px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.divSide2 {
+    height: 600px;
+    width: 450px;
+    position: absolute;
+    background-color: white;
+    right: 200px;
+    top: 210px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.divMid {
+    position: absolute;
+    background-color: white;
+    height: 650px;
+    width: 450px;
+    top: 185px;
+    left: 731px;
+    display: flex;
+    flex-direction: column;
+}
