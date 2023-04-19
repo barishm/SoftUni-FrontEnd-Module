@@ -40,19 +40,24 @@ function solve() {
         let {title,description,points,assignee,label} = inputDOMSelectors;
         let taskLabel = label.value;
         let labelClass = '';
+        let icon = '';
         if(label.value == 'Low Priority Bug') {
             labelClass = "low-priority";
+            icon = '&#9737;';
         }else if(label.value == 'High Priority Bug'){
             labelClass = "high-priority";
+            icon = '&#9888;';
         }else if(label.value == 'Feature'){
             labelClass = "feature";
+            icon = '&#8865;';
         }
         let article = createElement('article',otherDOMSelectors.main,'',['task-card'],`task-${taskCount}`);
-        let div1 = createElement('div',article,`${label.value}`,[`task-card-label`,`${labelClass}`]);
-        let h3 = createElement('h3',article,`${title.value}`,[`task-card-title`]);
-        let p = createElement('p',article,`${description.value}`,['task-card-description']);
+        let div1 = createElement('div',article,`${label.value} ${icon}`,[`task-card-label`,`${labelClass}`]);
+        div1.innerHTML = `${label.value} ${icon}`;
+        createElement('h3',article,`${title.value}`,[`task-card-title`]);
+        createElement('p',article,`${description.value}`,['task-card-description']);
         let div2 = createElement('div',article,`Estimated at ${points.value} pts`,['task-card-points']);
-        let div3 = createElement('div',article,`Assigned to: ${assignee.value}`,['task-card-assignee']);
+        createElement('div',article,`Assigned to: ${assignee.value}`,['task-card-assignee']);
         let div4 = createElement('div',article,'',['task-card-actions']);
         let btnDelete = createElement('button',div4,'Delete');
         sumPoints += Number(points.value);
@@ -64,7 +69,7 @@ function solve() {
             backup[key] = inputDOMSelectors[key].value;
         }
 
-        function taskDeleteHandler(event) {
+        function taskDeleteHandler() {
             for (const key in inputDOMSelectors) {
                 inputDOMSelectors[key].value = backup[key];
             }
@@ -75,28 +80,35 @@ function solve() {
             for (const input in inputDOMSelectors) {
               inputDOMSelectors[input].disabled = true;
             }
+            let element = this.parentNode.parentNode.id;
+            let taskid = document.querySelector('#create-task-form > input');
+            taskid.id = element;
+            otherDOMSelectors.deleteBtn.addEventListener('click',deleteBtnHandler, { once: true });
 
+            function deleteBtnHandler() {
 
-            otherDOMSelectors.deleteBtn.addEventListener('click',deleteBtnHandler);
-            function deleteBtnHandler(event) {
-
-                for (const input in inputDOMSelectors) {
-                  inputDOMSelectors[input].disabled = false;
-                }
-
-                let match = div2.innerHTML.match(/\d+/);
-                let num = parseInt(match[0]);
-                sumPoints -= num;
-                otherDOMSelectors.createBtn.disabled = false;
-                otherDOMSelectors.deleteBtn.setAttribute('disabled',true);
-                article.remove();
-                for (const i of Object.values(inputDOMSelectors)) {
-                  i.value = '';
-                }
-                SprintPoints.textContent = `Total Points ${sumPoints}pts`;
-            }
+              for (const input in inputDOMSelectors) {
+                inputDOMSelectors[input].disabled = false;
+              }
+    
+              let taskid = document.querySelector('#create-task-form > input');
+              
+              let points = document.querySelector(`#tasks-section #${taskid.id} .task-card-points`);
+              let text = points.innerHTML;
+              let match = text.match(/\d+/);
+              //let num = parseInt(match[0]);
+              sumPoints -= Number(match);
+              otherDOMSelectors.createBtn.disabled = false;
+              otherDOMSelectors.deleteBtn.setAttribute('disabled',true);
+              article.remove();
+              for (const i of Object.values(inputDOMSelectors)) {
+                i.value = '';
+              }
+              SprintPoints.textContent = `Total Points ${sumPoints}pts`;
+          }
 
         }
+        
 
         SprintPoints.textContent = `Total Points ${sumPoints}pts`;
         for (const i of Object.values(inputDOMSelectors)) {
