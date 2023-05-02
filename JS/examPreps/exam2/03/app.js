@@ -10,7 +10,7 @@ function attachEvents() {
         addBtn: document.getElementById('add-product'),
         updateBtn: document.getElementById('update-product'),
         loadBtn: document.getElementById('load-product'),
-        prodCont: document.getElementById('tbody'),
+        courseCont: document.getElementById('tbody'),
         form: document.querySelector('.list'),
     }
 

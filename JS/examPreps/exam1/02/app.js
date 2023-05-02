@@ -56,6 +56,9 @@ function solve() {
     for (const key in inputDOMSelectors) {
       storyState[key] = inputDOMSelectors[key].value;
     }
+    for (const key in inputDOMSelectors) {
+      inputDOMSelectors[key].value = '';
+    }
 
     function editStoryHandler(){
       for (const key in inputDOMSelectors) {
